@@ -3,14 +3,14 @@ name: Loadtest
 on:
   push:
     branches:
-      - master
+      - main
   workflow_dispatch:
 
 jobs:
   loadtest00:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/init/node-base
+      - uses: ./.github/actions/init
 
       - name: Loadtest
         run: pnpm start
@@ -21,7 +21,7 @@ jobs:
   loadtest01:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/init/node-base
+      - uses: ./.github/actions/init
 
       - name: Loadtest
         run: pnpm start
@@ -32,7 +32,7 @@ jobs:
   loadtest02:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/init/node-base
+      - uses: ./.github/actions/init
 
       - name: Loadtest
         run: pnpm start
@@ -43,7 +43,7 @@ jobs:
   loadtest03:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/init/node-base
+      - uses: ./.github/actions/init
 
       - name: Loadtest
         run: pnpm start
@@ -54,7 +54,7 @@ jobs:
   loadtest04:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/init/node-base
+      - uses: ./.github/actions/init
 
       - name: Loadtest
         run: pnpm start
@@ -65,7 +65,7 @@ jobs:
   loadtest05:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/init/node-base
+      - uses: ./.github/actions/init
 
       - name: Loadtest
         run: pnpm start
@@ -76,7 +76,7 @@ jobs:
   loadtest06:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/init/node-base
+      - uses: ./.github/actions/init
 
       - name: Loadtest
         run: pnpm start
@@ -87,7 +87,7 @@ jobs:
   loadtest07:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/init/node-base
+      - uses: ./.github/actions/init
 
       - name: Loadtest
         run: pnpm start
@@ -98,7 +98,7 @@ jobs:
   loadtest08:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/init/node-base
+      - uses: ./.github/actions/init
 
       - name: Loadtest
         run: pnpm start
@@ -109,7 +109,7 @@ jobs:
   loadtest09:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/init/node-base
+      - uses: ./.github/actions/init
 
       - name: Loadtest
         run: pnpm start
@@ -120,7 +120,7 @@ jobs:
   loadtest10:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/init/node-base
+      - uses: ./.github/actions/init
 
       - name: Loadtest
         run: pnpm start
@@ -131,7 +131,7 @@ jobs:
   loadtest11:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/init/node-base
+      - uses: ./.github/actions/init
 
       - name: Loadtest
         run: pnpm start
@@ -142,7 +142,7 @@ jobs:
   loadtest12:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/init/node-base
+      - uses: ./.github/actions/init
 
       - name: Loadtest
         run: pnpm start
@@ -153,7 +153,7 @@ jobs:
   loadtest13:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/init/node-base
+      - uses: ./.github/actions/init
 
       - name: Loadtest
         run: pnpm start
@@ -164,7 +164,7 @@ jobs:
   loadtest14:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/init/node-base
+      - uses: ./.github/actions/init
 
       - name: Loadtest
         run: pnpm start
@@ -175,7 +175,7 @@ jobs:
   loadtest15:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/init/node-base
+      - uses: ./.github/actions/init
 
       - name: Loadtest
         run: pnpm start
@@ -186,7 +186,7 @@ jobs:
   loadtest16:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/init/node-base
+      - uses: ./.github/actions/init
 
       - name: Loadtest
         run: pnpm start
@@ -197,7 +197,7 @@ jobs:
   loadtest17:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/init/node-base
+      - uses: ./.github/actions/init
 
       - name: Loadtest
         run: pnpm start
@@ -208,7 +208,7 @@ jobs:
   loadtest18:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/init/node-base
+      - uses: ./.github/actions/init
 
       - name: Loadtest
         run: pnpm start
@@ -219,7 +219,7 @@ jobs:
   loadtest19:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/init/node-base
+      - uses: ./.github/actions/init
 
       - name: Loadtest
         run: pnpm start
@@ -230,7 +230,7 @@ jobs:
   loadtest20:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/init/node-base
+      - uses: ./.github/actions/init
 
       - name: Loadtest
         run: pnpm start
@@ -241,7 +241,7 @@ jobs:
   loadtest21:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/init/node-base
+      - uses: ./.github/actions/init
 
       - name: Loadtest
         run: pnpm start
@@ -252,7 +252,7 @@ jobs:
   loadtest22:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/init/node-base
+      - uses: ./.github/actions/init
 
       - name: Loadtest
         run: pnpm start
@@ -263,7 +263,7 @@ jobs:
   loadtest23:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/init/node-base
+      - uses: ./.github/actions/init
 
       - name: Loadtest
         run: pnpm start
@@ -274,7 +274,7 @@ jobs:
   loadtest24:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/init/node-base
+      - uses: ./.github/actions/init
 
       - name: Loadtest
         run: pnpm start
@@ -285,7 +285,7 @@ jobs:
   loadtest25:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/init/node-base
+      - uses: ./.github/actions/init
 
       - name: Loadtest
         run: pnpm start
@@ -296,7 +296,7 @@ jobs:
   loadtest26:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/init/node-base
+      - uses: ./.github/actions/init
 
       - name: Loadtest
         run: pnpm start
@@ -307,7 +307,7 @@ jobs:
   loadtest27:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/init/node-base
+      - uses: ./.github/actions/init
 
       - name: Loadtest
         run: pnpm start
@@ -318,7 +318,7 @@ jobs:
   loadtest28:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/init/node-base
+      - uses: ./.github/actions/init
 
       - name: Loadtest
         run: pnpm start
@@ -329,7 +329,7 @@ jobs:
   loadtest29:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/init/node-base
+      - uses: ./.github/actions/init
 
       - name: Loadtest
         run: pnpm start
