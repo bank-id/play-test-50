@@ -17,6 +17,7 @@ jobs:
         run: pnpm start
         env:
           HEADLESS: new
+          REPO_NAME: ${{ github.event.repository.name }}
           CONTENDER_INDEX: 0
 
   loadtest01:
@@ -29,6 +30,7 @@ jobs:
         run: pnpm start
         env:
           HEADLESS: new
+          REPO_NAME: ${{ github.event.repository.name }}
           CONTENDER_INDEX: 1
 
   loadtest02:
@@ -41,6 +43,7 @@ jobs:
         run: pnpm start
         env:
           HEADLESS: new
+          REPO_NAME: ${{ github.event.repository.name }}
           CONTENDER_INDEX: 2
 
   loadtest03:
@@ -53,6 +56,7 @@ jobs:
         run: pnpm start
         env:
           HEADLESS: new
+          REPO_NAME: ${{ github.event.repository.name }}
           CONTENDER_INDEX: 3
 
   loadtest04:
@@ -65,6 +69,7 @@ jobs:
         run: pnpm start
         env:
           HEADLESS: new
+          REPO_NAME: ${{ github.event.repository.name }}
           CONTENDER_INDEX: 4
 
   loadtest05:
@@ -77,6 +82,7 @@ jobs:
         run: pnpm start
         env:
           HEADLESS: new
+          REPO_NAME: ${{ github.event.repository.name }}
           CONTENDER_INDEX: 5
 
   loadtest06:
@@ -89,6 +95,7 @@ jobs:
         run: pnpm start
         env:
           HEADLESS: new
+          REPO_NAME: ${{ github.event.repository.name }}
           CONTENDER_INDEX: 6
 
   loadtest07:
@@ -101,6 +108,7 @@ jobs:
         run: pnpm start
         env:
           HEADLESS: new
+          REPO_NAME: ${{ github.event.repository.name }}
           CONTENDER_INDEX: 7
 
   loadtest08:
@@ -113,6 +121,7 @@ jobs:
         run: pnpm start
         env:
           HEADLESS: new
+          REPO_NAME: ${{ github.event.repository.name }}
           CONTENDER_INDEX: 8
 
   loadtest09:
@@ -125,244 +134,265 @@ jobs:
         run: pnpm start
         env:
           HEADLESS: new
+          REPO_NAME: ${{ github.event.repository.name }}
           CONTENDER_INDEX: 9
 
-  loadtest10:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/init
+  # loadtest10:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: ./.github/actions/init
 
-      - name: Loadtest
-        run: pnpm start
-        env:
-          HEADLESS: new
-          CONTENDER_INDEX: 10
+  #     - name: Loadtest
+  #       run: pnpm start
+  #       env:
+  #         HEADLESS: new
+  #         REPO_NAME: ${{ github.event.repository.name }}
+  #         CONTENDER_INDEX: 10
 
-  loadtest11:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/init
+  # loadtest11:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: ./.github/actions/init
 
-      - name: Loadtest
-        run: pnpm start
-        env:
-          HEADLESS: new
-          CONTENDER_INDEX: 11
+  #     - name: Loadtest
+  #       run: pnpm start
+  #       env:
+  #         HEADLESS: new
+  #         REPO_NAME: ${{ github.event.repository.name }}
+  #         CONTENDER_INDEX: 11
 
-  loadtest12:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/init
+  # loadtest12:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: ./.github/actions/init
 
-      - name: Loadtest
-        run: pnpm start
-        env:
-          HEADLESS: new
-          CONTENDER_INDEX: 12
+  #     - name: Loadtest
+  #       run: pnpm start
+  #       env:
+  #         HEADLESS: new
+  #         REPO_NAME: ${{ github.event.repository.name }}
+  #         CONTENDER_INDEX: 12
 
-  loadtest13:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/init
+  # loadtest13:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: ./.github/actions/init
 
-      - name: Loadtest
-        run: pnpm start
-        env:
-          HEADLESS: new
-          CONTENDER_INDEX: 13
+  #     - name: Loadtest
+  #       run: pnpm start
+  #       env:
+  #         HEADLESS: new
+  #         REPO_NAME: ${{ github.event.repository.name }}
+  #         CONTENDER_INDEX: 13
 
-  loadtest14:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/init
+  # loadtest14:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: ./.github/actions/init
 
-      - name: Loadtest
-        run: pnpm start
-        env:
-          HEADLESS: new
-          CONTENDER_INDEX: 14
+  #     - name: Loadtest
+  #       run: pnpm start
+  #       env:
+  #         HEADLESS: new
+  #         REPO_NAME: ${{ github.event.repository.name }}
+  #         CONTENDER_INDEX: 14
 
-  loadtest15:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/init
+  # loadtest15:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: ./.github/actions/init
 
-      - name: Loadtest
-        run: pnpm start
-        env:
-          HEADLESS: new
-          CONTENDER_INDEX: 15
+  #     - name: Loadtest
+  #       run: pnpm start
+  #       env:
+  #         HEADLESS: new
+  #         REPO_NAME: ${{ github.event.repository.name }}
+  #         CONTENDER_INDEX: 15
 
-  loadtest16:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/init
+  # loadtest16:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: ./.github/actions/init
 
-      - name: Loadtest
-        run: pnpm start
-        env:
-          HEADLESS: new
-          CONTENDER_INDEX: 16
+  #     - name: Loadtest
+  #       run: pnpm start
+  #       env:
+  #         HEADLESS: new
+  #         REPO_NAME: ${{ github.event.repository.name }}
+  #         CONTENDER_INDEX: 16
 
-  loadtest17:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/init
+  # loadtest17:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: ./.github/actions/init
 
-      - name: Loadtest
-        run: pnpm start
-        env:
-          HEADLESS: new
-          CONTENDER_INDEX: 17
+  #     - name: Loadtest
+  #       run: pnpm start
+  #       env:
+  #         HEADLESS: new
+  #         REPO_NAME: ${{ github.event.repository.name }}
+  #         CONTENDER_INDEX: 17
 
-  loadtest18:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/init
+  # loadtest18:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: ./.github/actions/init
 
-      - name: Loadtest
-        run: pnpm start
-        env:
-          HEADLESS: new
-          CONTENDER_INDEX: 18
+  #     - name: Loadtest
+  #       run: pnpm start
+  #       env:
+  #         HEADLESS: new
+  #         REPO_NAME: ${{ github.event.repository.name }}
+  #         CONTENDER_INDEX: 18
 
-  loadtest19:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/init
+  # loadtest19:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: ./.github/actions/init
 
-      - name: Loadtest
-        run: pnpm start
-        env:
-          HEADLESS: new
-          CONTENDER_INDEX: 19
+  #     - name: Loadtest
+  #       run: pnpm start
+  #       env:
+  #         HEADLESS: new
+  #         REPO_NAME: ${{ github.event.repository.name }}
+  #         CONTENDER_INDEX: 19
 
-  loadtest20:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/init
+  # loadtest20:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: ./.github/actions/init
 
-      - name: Loadtest
-        run: pnpm start
-        env:
-          HEADLESS: new
-          CONTENDER_INDEX: 20
+  #     - name: Loadtest
+  #       run: pnpm start
+  #       env:
+  #         HEADLESS: new
+  #         REPO_NAME: ${{ github.event.repository.name }}
+  #         CONTENDER_INDEX: 20
 
-  loadtest21:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/init
+  # loadtest21:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: ./.github/actions/init
 
-      - name: Loadtest
-        run: pnpm start
-        env:
-          HEADLESS: new
-          CONTENDER_INDEX: 21
+  #     - name: Loadtest
+  #       run: pnpm start
+  #       env:
+  #         HEADLESS: new
+  #         REPO_NAME: ${{ github.event.repository.name }}
+  #         CONTENDER_INDEX: 21
 
-  loadtest22:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/init
+  # loadtest22:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: ./.github/actions/init
 
-      - name: Loadtest
-        run: pnpm start
-        env:
-          HEADLESS: new
-          CONTENDER_INDEX: 22
+  #     - name: Loadtest
+  #       run: pnpm start
+  #       env:
+  #         HEADLESS: new
+  #         REPO_NAME: ${{ github.event.repository.name }}
+  #         CONTENDER_INDEX: 22
 
-  loadtest23:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/init
+  # loadtest23:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: ./.github/actions/init
 
-      - name: Loadtest
-        run: pnpm start
-        env:
-          HEADLESS: new
-          CONTENDER_INDEX: 23
+  #     - name: Loadtest
+  #       run: pnpm start
+  #       env:
+  #         HEADLESS: new
+  #         REPO_NAME: ${{ github.event.repository.name }}
+  #         CONTENDER_INDEX: 23
 
-  loadtest24:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/init
+  # loadtest24:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: ./.github/actions/init
 
-      - name: Loadtest
-        run: pnpm start
-        env:
-          HEADLESS: new
-          CONTENDER_INDEX: 24
+  #     - name: Loadtest
+  #       run: pnpm start
+  #       env:
+  #         HEADLESS: new
+  #         REPO_NAME: ${{ github.event.repository.name }}
+  #         CONTENDER_INDEX: 24
 
-  loadtest25:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/init
+  # loadtest25:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: ./.github/actions/init
 
-      - name: Loadtest
-        run: pnpm start
-        env:
-          HEADLESS: new
-          CONTENDER_INDEX: 25
+  #     - name: Loadtest
+  #       run: pnpm start
+  #       env:
+  #         HEADLESS: new
+  #         REPO_NAME: ${{ github.event.repository.name }}
+  #         CONTENDER_INDEX: 25
 
-  loadtest26:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/init
+  # loadtest26:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: ./.github/actions/init
 
-      - name: Loadtest
-        run: pnpm start
-        env:
-          HEADLESS: new
-          CONTENDER_INDEX: 26
+  #     - name: Loadtest
+  #       run: pnpm start
+  #       env:
+  #         HEADLESS: new
+  #         REPO_NAME: ${{ github.event.repository.name }}
+  #         CONTENDER_INDEX: 26
 
-  loadtest27:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/init
+  # loadtest27:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: ./.github/actions/init
 
-      - name: Loadtest
-        run: pnpm start
-        env:
-          HEADLESS: new
-          CONTENDER_INDEX: 27
+  #     - name: Loadtest
+  #       run: pnpm start
+  #       env:
+  #         HEADLESS: new
+  #         REPO_NAME: ${{ github.event.repository.name }}
+  #         CONTENDER_INDEX: 27
 
-  loadtest28:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/init
+  # loadtest28:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: ./.github/actions/init
 
-      - name: Loadtest
-        run: pnpm start
-        env:
-          HEADLESS: new
-          CONTENDER_INDEX: 28
+  #     - name: Loadtest
+  #       run: pnpm start
+  #       env:
+  #         HEADLESS: new
+  #         REPO_NAME: ${{ github.event.repository.name }}
+  #         CONTENDER_INDEX: 28
 
-  loadtest29:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/init
+  # loadtest29:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: ./.github/actions/init
 
-      - name: Loadtest
-        run: pnpm start
-        env:
-          HEADLESS: new
-          CONTENDER_INDEX: 29
+  #     - name: Loadtest
+  #       run: pnpm start
+  #       env:
+  #         HEADLESS: new
+  #         REPO_NAME: ${{ github.event.repository.name }}
+  #         CONTENDER_INDEX: 29

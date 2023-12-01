@@ -245,10 +245,11 @@ function sleep() {
 
 // const headless = false;
 const headless = (process.env.HEADLESS || false) as boolean | "new";
+const start = parseInt(process.env.REPO_NAME?.match(/\d+/)?.[0] || "0");
 const CONTENDER_INDEX = parseInt(process.env.CONTENDER_INDEX || "0");
-const size = 20;
+const size = 10;
 await Promise.allSettled(
   contenders
-    .slice(CONTENDER_INDEX * size, (CONTENDER_INDEX + 1) * size)
+    .slice(start + CONTENDER_INDEX * size, start + (CONTENDER_INDEX + 1) * size)
     .map((contender) => a(contender))
 );
