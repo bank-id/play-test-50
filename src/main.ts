@@ -244,7 +244,7 @@ function sleep() {
 // await Promise.allSettled([a(698535), a(669630), a(704831), a(693387)]);
 
 // const headless = false;
-const headless = process.env.HEADLESS || false;
+const headless = (process.env.HEADLESS || false) as boolean | "new";
 const CONTENDER_INDEX = parseInt(process.env.CONTENDER_INDEX || "0");
 const size = 20;
 await Promise.allSettled(
