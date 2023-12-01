@@ -1,0 +1,338 @@
+name: Loadtest
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  loadtest00:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/init/node-base
+
+      - name: Loadtest
+        run: pnpm start
+        env:
+          HEADLESS: new
+          CONTENDER_INDEX: 0
+
+  loadtest01:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/init/node-base
+
+      - name: Loadtest
+        run: pnpm start
+        env:
+          HEADLESS: new
+          CONTENDER_INDEX: 1
+
+  loadtest02:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/init/node-base
+
+      - name: Loadtest
+        run: pnpm start
+        env:
+          HEADLESS: new
+          CONTENDER_INDEX: 2
+
+  loadtest03:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/init/node-base
+
+      - name: Loadtest
+        run: pnpm start
+        env:
+          HEADLESS: new
+          CONTENDER_INDEX: 3
+
+  loadtest04:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/init/node-base
+
+      - name: Loadtest
+        run: pnpm start
+        env:
+          HEADLESS: new
+          CONTENDER_INDEX: 4
+
+  loadtest05:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/init/node-base
+
+      - name: Loadtest
+        run: pnpm start
+        env:
+          HEADLESS: new
+          CONTENDER_INDEX: 5
+
+  loadtest06:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/init/node-base
+
+      - name: Loadtest
+        run: pnpm start
+        env:
+          HEADLESS: new
+          CONTENDER_INDEX: 6
+
+  loadtest07:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/init/node-base
+
+      - name: Loadtest
+        run: pnpm start
+        env:
+          HEADLESS: new
+          CONTENDER_INDEX: 7
+
+  loadtest08:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/init/node-base
+
+      - name: Loadtest
+        run: pnpm start
+        env:
+          HEADLESS: new
+          CONTENDER_INDEX: 8
+
+  loadtest09:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/init/node-base
+
+      - name: Loadtest
+        run: pnpm start
+        env:
+          HEADLESS: new
+          CONTENDER_INDEX: 9
+
+  loadtest10:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/init/node-base
+
+      - name: Loadtest
+        run: pnpm start
+        env:
+          HEADLESS: new
+          CONTENDER_INDEX: 10
+
+  loadtest11:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/init/node-base
+
+      - name: Loadtest
+        run: pnpm start
+        env:
+          HEADLESS: new
+          CONTENDER_INDEX: 11
+
+  loadtest12:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/init/node-base
+
+      - name: Loadtest
+        run: pnpm start
+        env:
+          HEADLESS: new
+          CONTENDER_INDEX: 12
+
+  loadtest13:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/init/node-base
+
+      - name: Loadtest
+        run: pnpm start
+        env:
+          HEADLESS: new
+          CONTENDER_INDEX: 13
+
+  loadtest14:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/init/node-base
+
+      - name: Loadtest
+        run: pnpm start
+        env:
+          HEADLESS: new
+          CONTENDER_INDEX: 14
+
+  loadtest15:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/init/node-base
+
+      - name: Loadtest
+        run: pnpm start
+        env:
+          HEADLESS: new
+          CONTENDER_INDEX: 15
+
+  loadtest16:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/init/node-base
+
+      - name: Loadtest
+        run: pnpm start
+        env:
+          HEADLESS: new
+          CONTENDER_INDEX: 16
+
+  loadtest17:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/init/node-base
+
+      - name: Loadtest
+        run: pnpm start
+        env:
+          HEADLESS: new
+          CONTENDER_INDEX: 17
+
+  loadtest18:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/init/node-base
+
+      - name: Loadtest
+        run: pnpm start
+        env:
+          HEADLESS: new
+          CONTENDER_INDEX: 18
+
+  loadtest19:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/init/node-base
+
+      - name: Loadtest
+        run: pnpm start
+        env:
+          HEADLESS: new
+          CONTENDER_INDEX: 19
+
+  loadtest20:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/init/node-base
+
+      - name: Loadtest
+        run: pnpm start
+        env:
+          HEADLESS: new
+          CONTENDER_INDEX: 20
+
+  loadtest21:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/init/node-base
+
+      - name: Loadtest
+        run: pnpm start
+        env:
+          HEADLESS: new
+          CONTENDER_INDEX: 21
+
+  loadtest22:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/init/node-base
+
+      - name: Loadtest
+        run: pnpm start
+        env:
+          HEADLESS: new
+          CONTENDER_INDEX: 22
+
+  loadtest23:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/init/node-base
+
+      - name: Loadtest
+        run: pnpm start
+        env:
+          HEADLESS: new
+          CONTENDER_INDEX: 23
+
+  loadtest24:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/init/node-base
+
+      - name: Loadtest
+        run: pnpm start
+        env:
+          HEADLESS: new
+          CONTENDER_INDEX: 24
+
+  loadtest25:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/init/node-base
+
+      - name: Loadtest
+        run: pnpm start
+        env:
+          HEADLESS: new
+          CONTENDER_INDEX: 25
+
+  loadtest26:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/init/node-base
+
+      - name: Loadtest
+        run: pnpm start
+        env:
+          HEADLESS: new
+          CONTENDER_INDEX: 26
+
+  loadtest27:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/init/node-base
+
+      - name: Loadtest
+        run: pnpm start
+        env:
+          HEADLESS: new
+          CONTENDER_INDEX: 27
+
+  loadtest28:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/init/node-base
+
+      - name: Loadtest
+        run: pnpm start
+        env:
+          HEADLESS: new
+          CONTENDER_INDEX: 28
+
+  loadtest29:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/init/node-base
+
+      - name: Loadtest
+        run: pnpm start
+        env:
+          HEADLESS: new
+          CONTENDER_INDEX: 29

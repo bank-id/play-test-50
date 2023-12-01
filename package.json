@@ -1,0 +1,16 @@
+{
+  "name": "play-test",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "tsx ./src/main.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.6.0"
+  },
+  "dependencies": {
+    "@chessalpha/core": "0.1.4-alpha.24",
+    "firebase": "^10.7.0",
+    "puppeteer": "^21.5.2"
+  }
+}
